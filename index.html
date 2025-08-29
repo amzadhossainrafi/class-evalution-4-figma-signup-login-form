@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upstream - Login</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Upstream</h1>
+            <p class="subtitle">Secure Access Portal</p>
+        </div>
+        
+        <div class="form-container">
+            <form id="loginForm">
+                <div class="input-group error">
+                    <div class="input-title">
+                        <label for="username">Error user name</label>
+                        <span class="error-text">Error message is found by us or for another</span>
+                    </div>
+                    <input type="text" id="username" placeholder="Type/ID 1" required>
+                </div>
+                
+                <div class="input-group">
+                    <div class="input-title">
+                        <label for="password">Password</label>
+                    </div>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                    <p class="password-info">Your password is known as our 12 characters. <a href="#" id="forgotPassword">Forgot password?</a></p>
+                </div>
+                
+                <div class="input-group">
+                    <div class="input-title">
+                        <label class="section-title">Type/Text Label</label>
+                    </div>
+                    <input type="text" id="textLabel" placeholder="Type/ID 1">
+                </div>
+                
+                <div class="radio-group">
+                    <label class="section-title">Remember me:</label>
+                    <div class="radio-option">
+                        <input type="radio" id="off" name="remember" value="off" checked>
+                        <label for="off">Off</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="radio1" name="remember" value="radio1">
+                        <label for="radio1">Radio solutions 1</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="radio2" name="remember" value="radio2">
+                        <label for="radio2">Radio solutions 2</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="radio3" name="remember" value="radio3">
+                        <label for="radio3">Radio solutions 3</label>
+                    </div>
+                </div>
+                
+                <div class="duration-section">
+                    <div class="duration-option">
+                        <label for="duration">Duration: 10th</label>
+                        <select id="duration">
+                            <option value="">Duration option:</option>
+                            <option value="1">1 Day</option>
+                            <option value="7">1 Week</option>
+                            <option value="30">1 Month</option>
+                        </select>
+                    </div>
+                    
+                    <div class="duration-option">
+                        <label for="dropdown">Dropdown option:</label>
+                        <select id="dropdown">
+                            <option value="option1">Dropdown option 1</option>
+                            <option value="option2">Dropdown option 2</option>
+                            <option value="option3">Dropdown option 3</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="button-group">
+                    <button type="button" class="cancel-btn" id="cancelBtn">Cancel</button>
+                    <button type="submit" class="next-btn">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
